@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
@@ -20,6 +21,7 @@ function App() {
         {sectionSelected === 'contact' &&
         <Contact></Contact>}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
