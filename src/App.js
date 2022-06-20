@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
@@ -14,7 +15,10 @@ function App() {
         setSectionSelected={setSectionSelected}
       ></Header>
       <main>
-        <About></About>
+        {sectionSelected === 'about' &&
+        <About></About>}
+        {sectionSelected === 'contact' &&
+        <Contact></Contact>}
       </main>
     </div>
   );

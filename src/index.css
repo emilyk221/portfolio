@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: var(--light);
+  text-align: center;
 }
 
 h1,
@@ -24,7 +25,7 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  margin: 5px 0;
+  margin: 5px;
   line-height: 1.25;
 }
 
@@ -85,6 +86,33 @@ nav li {
   border-radius: 8px;
 }
 
+#contact-form {
+  width: 40%;
+  margin: 10px 50px;
+}
+
+.form-label {
+  margin: 0.75rem 0 1rem 0.75rem;
+  text-align: left;
+}
+
+.button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 15px;
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.button:hover {
+  opacity: .8;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -96,10 +124,9 @@ nav li {
 
 .about img {
   border-radius: 50%;
-  width: 200px;
+  width: 300px;
 }
 
 .navActive {
   background-color: var(--secondary);
-  color: var(--dark);
 }
