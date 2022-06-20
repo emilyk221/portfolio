@@ -3,7 +3,7 @@ import Avatar from '../../assets/images/AvatarEmily.png';
 
 function About() {
   return (
-    <section className="About">
+    <section className="about">
       <h2>About Me</h2>
       <img src={Avatar} alt="Avatar of Emily Kruse wearing glasses and a hoodie" />
       <p>

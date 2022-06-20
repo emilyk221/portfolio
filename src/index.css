@@ -59,13 +59,15 @@ p {
 
 header {
   background: var(--dark);
+  padding: 30px;
 }
 
 header a {
   color: var(--light);
+  text-decoration: none;
 }
 
-.navActive {
+header a:hover {
   color: var(--secondary);
 }
 
@@ -77,11 +79,27 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.navActive {
+  background-color: var(--secondary);
+  color: var(--dark);
 }

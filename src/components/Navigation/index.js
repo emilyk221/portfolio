@@ -5,22 +5,29 @@ function Navigation(props) {
     sectionSelected,
     setSectionSelected
   } = props;
+
   return (
-    <nav className="Nav">
+    <nav className="nav">
       <ul className="flex-row">
-        <li className="mx-2">
-          <a data-testid="about" href="#about" onClick={() => setSectionSelected("About")}>
+        <li className={`mx-2 ${sectionSelected === 'about' && 'navActive'}`}>
+          <h4><a href="#about" onClick={() => setSectionSelected("about")}>
             About me
-          </a>
+          </a></h4>
         </li>
-        <li className={`mx-2 ${sectionSelected && 'navActive'}`}>
-          <span onClick={() => setSectionSelected("Projects")}>Projects</span>
+        <li className={`mx-2 ${sectionSelected === 'projects' && 'navActive'}`}>
+          <h4><a href="#projects" onClick={() => setSectionSelected("projects")}>
+            Projects
+          </a></h4>
         </li>
-        <li className={`mx-2 ${sectionSelected && 'navActive'}`}>
-          <span onClick={() => setSectionSelected("Contact")}>Contact</span>
+        <li className={`mx-2 ${sectionSelected === 'contact' && 'navActive'}`}>
+          <h4><a href="#contact" onClick={() => setSectionSelected("contact")}>
+            Contact
+          </a></h4>
         </li>
-        <li className={`mx-2 ${sectionSelected && 'navActive'}`}>
-          <span onClick={() => setSectionSelected("Resume")}>Resume</span>
+        <li className={`mx-2 ${sectionSelected === 'resume' && 'navActive'}`}>
+          <h4><a href="#resume" onClick={() => setSectionSelected("resume")}>
+            Resume
+          </a></h4>
         </li>
       </ul>
     </nav>
