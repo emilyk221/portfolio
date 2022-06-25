@@ -38,7 +38,7 @@ function Contact() {
     console.log(formState);
   }
   return (
-    <section className="contact">
+    <section className="contact section">
       <h2>Contact</h2>
       <Form id="contact-form" onSubmit={handleSubmit}>
         <Form.Group>

@@ -5,9 +5,9 @@ import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-
 function Footer() {
   return (
     <footer className="footer">
-      <a href="https://github.com/emilyk221"><FontAwesomeIcon icon={faGithub} size='4x' /></a>
-      <a href="https://www.linkedin.com/in/emily-g-kruse/"><FontAwesomeIcon icon={faLinkedin} size='4x' /></a>
-      <a href="https://stackoverflow.com/users/17980237/emily"><FontAwesomeIcon icon={faStackOverflow} size='4x' /></a>
+      <a href="https://github.com/emilyk221"><FontAwesomeIcon icon={faGithub} size='3x' /></a>
+      <a href="https://www.linkedin.com/in/emily-g-kruse/"><FontAwesomeIcon icon={faLinkedin} size='3x' /></a>
+      <a href="https://stackoverflow.com/users/17980237/emily"><FontAwesomeIcon icon={faStackOverflow} size='3x' /></a>
     </footer>
   );
 }

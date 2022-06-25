@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <About></About>
         }
         {sectionSelected === 'projects' &&
-          <section className='projects'>
+          <section className='projects section'>
             <h2>Projects</h2>
             <Project></Project>
           </section>
@@ -30,27 +31,7 @@ function App() {
           <Contact></Contact>
         }
         {sectionSelected === 'resume' &&
-          <section className='resume'>
-            <h2>Resume</h2>
-            <p>Download my <a href="./assets/images/Emily-Kruse-Resume.pdf" target="_blank">Resume</a></p>
-            <h4>Skills and Proficiencies</h4>
-            <ul>
-              <li>MERN stack</li>
-              <li>Javascript</li>
-              <li>Node.js</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Express.js</li>
-              <li>React</li>
-              <li>Jquery</li>
-              <li>Bootstrap</li>
-              <li>REST APIs</li>
-              <li>MySQL</li>
-              <li>Sequelize</li>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-            </ul>
-          </section>
+          <Resume></Resume>
         }
       </main>
       <Footer></Footer>
