@@ -4,9 +4,9 @@ function Resume() {
   return (
     <section className="resume section">
       <h2>Resume</h2>
-      <p>Download my
+      <p>Download my 
         <a href={require("../../assets/images/Emily-Kruse-Resume.pdf")} 
-          download="Emily-Kruse-Resume"> Resume
+          download="Emily-Kruse-Resume">resume
         </a>
       </p>
       <h4>Proficiencies</h4>

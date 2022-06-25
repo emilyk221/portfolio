@@ -44,12 +44,12 @@ function Project() {
                 key={project.name}
               />
               <Card.ImgOverlay className="overlay">
-                <Card.Title>
-                  <a href={project.href}>{project.name}</a>
-                  <a href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
+                <Card.Title className='overlay-title flex-row space-between'>
+                  <a className="overlay-link" href={project.href}>{project.name}</a>
+                  <a className="overlay-github" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
                 </Card.Title>
                 <br />
-                <Card.Text>{project.type}</Card.Text>
+                <Card.Text className='overlay-text'>{project.type}</Card.Text>
               </Card.ImgOverlay>
             </Card>
           </Col>
