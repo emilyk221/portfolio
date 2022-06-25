@@ -47,7 +47,7 @@ function Project() {
       name: 'Portfolio',
       type: 'React App',
       description: 'A portfolio built using React to introduce myself and demonstrate my web development abilities to potential employers',
-      href: '#',
+      href: 'http://emilyk221.github.io/portfolio',
       github: 'https://github.com/emilyk221/portfolio'
     }
   ]);

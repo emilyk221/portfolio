@@ -16,7 +16,7 @@
   * [Questions](#questions)
 
   ## Usage
-  This webpage can be found at [].
+  This webpage can be found at [http://emilyk221.github.io/portfolio](http://emilyk221.github.io/portfolio).
   From there, you may read about me, view a selection of my projects, contact me, and download my resume.
 
   ## License
