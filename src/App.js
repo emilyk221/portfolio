@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
