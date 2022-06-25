@@ -66,10 +66,33 @@ a {
   position: relative;
 }
 
+li {
+  list-style: none;
+}
+
+.mx-2 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .section {
   margin: 20px 50px;
 }
 
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+/* header styles */
 header {
   background: var(--light);
   padding: 20px 25px;
@@ -87,6 +110,7 @@ header a:hover {
   color: var(--dark);
 }
 
+/* footer styles */
 footer {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -103,10 +127,7 @@ footer a:hover {
   opacity: 1;
 }
 
-li {
-  list-style: none;
-}
-
+/* navigation styles */
 nav a:hover {
   text-decoration: none;
 }
@@ -117,21 +138,27 @@ nav li {
   border-radius: 8px;
 }
 
-.mx-2 {
-  margin-right: 1rem;
-  margin-left: 1rem;
+.navActive {
+  background-color: var(--secondary);
 }
 
+.navActive a:hover {
+  color: var(--light);
+}
+
+/* about me styles */
 .about img {
   border-radius: 50%;
   width: 300px;
-  margin: 50px;
+  height: 300px;
+  align-self: center;
 }
 
 .about p {
-  margin: 0 50px;
+  width: 45%;
 }
 
+/* contact styles */
 #contact-form {
   width: 40%;
   margin: 10px 50px;
@@ -168,23 +195,7 @@ nav li {
   background-position: 0 -40px;
 }
 
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.navActive {
-  background-color: var(--secondary);
-}
-
-.navActive a:hover {
-  color: var(--light);
-}
-
+/* projects styles */
 .container {
   margin: 0 auto;
   width: 90%;
@@ -259,9 +270,11 @@ nav li {
   color: var(--dark);
 }
 
+/* resume styles */
 .resume li {
   list-style: circle;
   color: var(--light);
+  padding: 5px;
 }
 
 .resume a {

@@ -11,7 +11,7 @@ function Project() {
     {
       name: 'Coding Compass',
       type: 'Full Stack App',
-      description: 'This is a wesite that is designed to allow you to look up potential Coding bootcamps to compare them with other ones to see which will be the best for you',
+      description: 'A full stack group project built using MySQL, Node.js, Express.js, and Handlebars templating that allows users to compare different bootcamp programs',
       href: 'https://coding-compass.herokuapp.com/',
       github: 'https://github.com/hienm9/Coding-Compass'
     },
@@ -28,6 +28,27 @@ function Project() {
       description: 'This front-end app displays the current and forecasted weather in a user-input city',
       href: 'https://emilyk221.github.io/weather-dashboard/',
       github: 'https://github.com/emilyk221/weather-dashboard'
+    },
+    {
+      name: 'Budget Tracker',
+      type: 'Progressive Web App',
+      description: 'This web app was transformed into a PWA with offline functionality',
+      href: 'https://salty-waters-55531.herokuapp.com/',
+      github: 'https://github.com/emilyk221/Budget-Tracker'
+    },
+    {
+      name: 'Code Quiz',
+      type: 'Front End App',
+      description: 'A timed JavaScript coding quiz for users to test their JavaScript knowledge and compete for the high score',
+      href: 'https://emilyk221.github.io/Code-Quiz/',
+      github: 'https://github.com/emilyk221/Code-Quiz'
+    },
+    {
+      name: 'Portfolio',
+      type: 'React App',
+      description: 'A portfolio built using React to introduce myself and demonstrate my web development abilities to potential employers',
+      href: '#',
+      github: 'https://github.com/emilyk221/portfolio'
     }
   ]);
 
