@@ -10,7 +10,7 @@ function Header(props) {
   return (
     <header className="header flex-row space-between">
       <h1>
-        <a href="/">Emily Kruse</a>
+        <a href="/portfolio">Emily Kruse</a>
       </h1>
       <Navigation
         sectionSelected={sectionSelected}
