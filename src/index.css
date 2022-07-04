@@ -159,6 +159,14 @@ nav li {
 }
 
 /* contact styles */
+.contact-info {
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: var(--light);
+}
+
 #contact-form {
   width: 40%;
   margin: 10px 50px;
@@ -209,7 +217,7 @@ nav li {
 }
 
 .projects img {
-  height: 200px;
+  height: 400px;
 }
 
 .overlay {
@@ -228,7 +236,7 @@ nav li {
 }
 
 .col:hover .overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .overlay-title {
@@ -264,7 +272,15 @@ nav li {
 
 .overlay-text {
   position: absolute;
-  top: 70px;
+  top: 90px;
+  left: 30px;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+.overlay-role {
+  position: absolute;
+  top: 190px;
   left: 30px;
   font-size: 1.25rem;
   color: var(--dark);
@@ -277,12 +293,14 @@ nav li {
   padding: 5px;
 }
 
-.resume a {
+.resume a,
+.contact-info a {
   color: var(--light);
   padding: 3px 5px;
 }
 
-.resume a::before {
+.resume a::before,
+.contact-info a::before {
   content: '';
   background-color: var(--primary);
   position: absolute;
@@ -295,7 +313,8 @@ nav li {
   transition: all .5s ease-in-out;
 }
 
-.resume a:hover::before {
+.resume a:hover::before,
+.contact-info a:hover::before {
   bottom: 0;
   height: 100%;
 }

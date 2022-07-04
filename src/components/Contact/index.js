@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
 
 function Contact() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -40,7 +40,12 @@ function Contact() {
   return (
     <section className="contact section">
       <h2>Contact</h2>
-      <Form id="contact-form" onSubmit={handleSubmit}>
+      <p className='contact-info'>
+        Email: emily.g.kruse@gmail.com <br />
+        <a href="https://github.com/emilyk221">GitHub</a><br />
+        <a href="https://www.linkedin.com/in/emily-g-kruse/">LinkedIn</a>
+      </p>
+      {/* <Form id="contact-form" onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label htmlFor="name">Name:</Form.Label>
           <Form.Control type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -59,7 +64,7 @@ function Contact() {
           </div>
         )}
         <Button className="button" type="submit">Submit</Button>
-      </Form>
+      </Form> */}
     </section>
   );
 }

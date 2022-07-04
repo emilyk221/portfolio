@@ -12,6 +12,7 @@ function Project() {
       name: 'Coding Compass',
       type: 'Full Stack App',
       description: 'A full stack group project built using MySQL, Node.js, Express.js, and Handlebars templating that allows users to compare different bootcamp programs',
+      role: 'Back-end API routes co-author',
       href: 'https://coding-compass.herokuapp.com/',
       github: 'https://github.com/hienm9/Coding-Compass'
     },
@@ -19,6 +20,7 @@ function Project() {
       name: 'Tech Blog',
       type: 'Full Stack App',
       description: 'A full stack project that is a blog site that allows users to share blog posts and comments about posts',
+      role: 'Sole Author',
       href: 'https://young-falls-35521.herokuapp.com/',
       github: 'https://github.com/emilyk221/Blog'
     },
@@ -26,6 +28,7 @@ function Project() {
       name: 'Weather Dashboard',
       type: 'Front End App',
       description: 'This front-end app displays the current and forecasted weather in a user-input city',
+      role: 'Sole Author',
       href: 'https://emilyk221.github.io/weather-dashboard/',
       github: 'https://github.com/emilyk221/weather-dashboard'
     },
@@ -33,6 +36,7 @@ function Project() {
       name: 'Budget Tracker',
       type: 'Progressive Web App',
       description: 'This web app was transformed into a PWA with offline functionality',
+      role: 'Sole Author',
       href: 'https://salty-waters-55531.herokuapp.com/',
       github: 'https://github.com/emilyk221/Budget-Tracker'
     },
@@ -40,6 +44,7 @@ function Project() {
       name: 'Code Quiz',
       type: 'Front End App',
       description: 'A timed JavaScript coding quiz for users to test their JavaScript knowledge and compete for the high score',
+      role: 'Sole Author',
       href: 'https://emilyk221.github.io/Code-Quiz/',
       github: 'https://github.com/emilyk221/Code-Quiz'
     },
@@ -47,6 +52,7 @@ function Project() {
       name: 'Portfolio',
       type: 'React App',
       description: 'A portfolio built using React to introduce myself and demonstrate my web development abilities to potential employers',
+      role: 'Sole Author',
       href: 'http://emilyk221.github.io/portfolio',
       github: 'https://github.com/emilyk221/portfolio'
     }
@@ -69,8 +75,8 @@ function Project() {
                   <a className="overlay-link" href={project.href}>{project.name}</a>
                   <a className="overlay-github" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
                 </Card.Title>
-                <br />
-                <Card.Text className='overlay-text'>{project.type}</Card.Text>
+                <Card.Text className='overlay-text'>{project.type} - {project.description}</Card.Text>
+                <Card.Text className='overlay-role'>Role: {project.role}</Card.Text>
               </Card.ImgOverlay>
             </Card>
           </Col>
