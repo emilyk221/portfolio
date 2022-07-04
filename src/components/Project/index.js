@@ -59,30 +59,33 @@ function Project() {
   ]);
 
   return (
-    <Container>
-      <Row xs={1} md={2} className="g-4 flex-row">
-        {projects.map((project) => (
-          <Col key={project.name}>
-            <Card>
-              <Card.Img variant="top"
-                src={require(`../../assets/images/${project.name}.png`)} 
-                alt={project.description} 
-                className="card-img-fluid"
-                key={project.name}
-              />
-              <Card.ImgOverlay className="overlay">
-                <Card.Title className='overlay-title flex-row space-between'>
-                  <a className="overlay-link" href={project.href}>{project.name}</a>
-                  <a className="overlay-github" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
-                </Card.Title>
-                <Card.Text className='overlay-text'>{project.type} - {project.description}</Card.Text>
-                <Card.Text className='overlay-role'>Role: {project.role}</Card.Text>
-              </Card.ImgOverlay>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <section className='projects section'>
+      <h2>Projects</h2>
+      <Container>
+        <Row xs={1} md={2} className="g-4 flex-row">
+          {projects.map((project) => (
+            <Col key={project.name}>
+              <Card>
+                <Card.Img variant="top"
+                  src={require(`../../assets/images/${project.name}.png`)} 
+                  alt={project.description} 
+                  className="card-img-fluid"
+                  key={project.name}
+                />
+                <Card.ImgOverlay className="overlay">
+                  <Card.Title className='overlay-title flex-row space-between'>
+                    <a className="overlay-link" href={project.href}>{project.name}</a>
+                    <a className="overlay-github" href={project.github}><FontAwesomeIcon icon={faGithub} /></a>
+                  </Card.Title>
+                  <Card.Text className='overlay-text'>{project.type} - {project.description}</Card.Text>
+                  <Card.Text className='overlay-role'>Role: {project.role}</Card.Text>
+                </Card.ImgOverlay>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 }
 

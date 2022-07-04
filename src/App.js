@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
@@ -10,30 +12,23 @@ function App() {
   const [sectionSelected, setSectionSelected] = useState('about');
 
   return (
-    <div className="App">
-      <Header
-        sectionSelected={sectionSelected}
-        setSectionSelected={setSectionSelected}
-      ></Header>
-      <main>
-        {sectionSelected === 'about' &&
-          <About></About>
-        }
-        {sectionSelected === 'projects' &&
-          <section className='projects section'>
-            <h2>Projects</h2>
-            <Project></Project>
-          </section>
-        }
-        {sectionSelected === 'contact' &&
-          <Contact></Contact>
-        }
-        {sectionSelected === 'resume' &&
-          <Resume></Resume>
-        }
-      </main>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="App">
+        <Header
+          sectionSelected={sectionSelected}
+          setSectionSelected={setSectionSelected}
+        ></Header>
+        <main>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </main>
+        <Footer></Footer>
+      </div>
+    </Router>
   );
 }
 
