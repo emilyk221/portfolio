@@ -9,10 +9,18 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function Project() {
   const [projects] = useState([
     {
+      name: 'RentIt',
+      type: 'Full Stack App',
+      description: 'A collaborative full stack project built using MySQL, Node.js, Express.js, RESTful API, JWT, React, Bootstrap',
+      role: 'Full Stack collaborator',
+      href: 'https://app-rentit.herokuapp.com/',
+      github: 'https://github.com/ek33450505/octo-chainsaw'
+    },
+    {
       name: 'Coding Compass',
       type: 'Full Stack App',
-      description: 'A full stack group project built using MySQL, Node.js, Express.js, and Handlebars templating that allows users to compare different bootcamp programs',
-      role: 'Back-end API routes co-author',
+      description: 'A collaborative full stack project built using MySQL, Node.js, Express.js, and Handlebars templating that allows users to compare different bootcamp programs',
+      role: 'Back-end API routes collaborator',
       href: 'https://coding-compass.herokuapp.com/',
       github: 'https://github.com/hienm9/Coding-Compass'
     },
