@@ -94,7 +94,7 @@ li {
 
 /* header styles */
 header {
-  width: 100%;
+  /* width: 100%; */
   background: var(--light);
   padding: 20px 25px;
 }
@@ -321,7 +321,11 @@ nav li {
   height: 100%;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+
   nav li {
     margin: 0 5px;
   }
@@ -329,23 +333,6 @@ nav li {
   .about img {
     width: 250px;
     height: 250px;
-  }
-
-  .about p {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  h4 {
-    font-size: 1.25rem;
-  }
-
-  header {
-    width: 100%;
-  }
-
-  .about img {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -371,7 +358,7 @@ nav li {
   }
 
   header {
-    width: 100%;
+    /* width: 100%; */
     flex-direction: column;
   }
 

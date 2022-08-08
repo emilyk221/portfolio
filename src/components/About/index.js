@@ -9,11 +9,11 @@ function About() {
         <img src={Avatar} alt="Avatar of Emily Kruse wearing glasses and a hoodie" />
         <p>
         I am a full stack web developer ready to make lives easier and simpler by crafting solutions to problems and frustrations. 
-        I am currently earning a certificate in full stack web development from The Ohio State University Coding Bootcamp. I have 
+        I recently earned a certificate in full stack web development from The Ohio State University Coding Bootcamp. I have 
         recently developed my skills with JavaScript, CSS, HTML, Node, Express, MySQL, Sequelize, Handlebars, MongoDB, and React.<br /><br /> 
-        I recently worked on a team of eight to develop an app that helps prospective coding bootcamp students compare various 
-        bootcamps, including user-provided information in the form of ratings and comments, in order to find the best fit for them. 
-        During this project, I used agile development, MySQL, Sequelize, and templating.<br /><br /> My aim is to use industry best practices 
+        I recently worked on a team of six to develop an app called RentIt that allows users to list and rent items, such as tools, outdoor gear, etc., 
+        to/from other users. During this project, I used agile development, React, MySQL, Sequelize, Node.js, and Express.js. In the near future, 
+        we plan to add messaging and rental history components to RentIt to improve the user experience.<br /><br /> My aim is to use industry best practices 
         to build quality applications that solve pain points whether they are nearly universal or extremely niche. I am excited to 
         use my recently acquired software engineering skills and my life-long passion for creating to work collaboratively with a 
         team who makes a difference for people.
