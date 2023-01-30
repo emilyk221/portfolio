@@ -13,7 +13,7 @@ function Project() {
       type: 'Full Stack App',
       description: 'A collaborative full stack project built using MySQL, Node.js, Express.js, RESTful API, JWT, React, Bootstrap',
       role: 'Full Stack collaborator',
-      href: 'https://app-rentit.herokuapp.com/',
+      href: 'https://still-stream-33667.herokuapp.com',
       github: 'https://github.com/ek33450505/octo-chainsaw'
     },
     {
@@ -21,7 +21,7 @@ function Project() {
       type: 'Full Stack App',
       description: 'A collaborative full stack project built using MySQL, Node.js, Express.js, and Handlebars templating that allows users to compare different bootcamp programs',
       role: 'Back-end API routes collaborator',
-      href: 'https://coding-compass.herokuapp.com/',
+      href: 'https://still-peak-57413.herokuapp.com/',
       github: 'https://github.com/hienm9/Coding-Compass'
     },
     {
